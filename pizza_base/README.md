@@ -1,1 +1,0 @@
-Este é um projeto de aprendizagem que tem algum ainda não está completo, pois há algumas coisas a adicionar e corrigir. PS: Na parte do código que eu fiz não tem ; kk, ainda preciso me acostumar. Projeto do módulo de JS do curso B7Web

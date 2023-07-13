@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../pag-inicial/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" >
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+<body>
+    <header>
+        <!-- Cabeçalho -->
+        <nav id="menu-h">
+            <ul>
+              <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()" class="trespontos">&#9776;</span>
+                <div id="logo">
+                    <a href="../../index.html">
+                        <img src="../pag-inicial/logo-color.png" alt="logo">
+                    </a>
+                </div>
+                <li><a href="../pag-sobreSolistas/index.html">O que é um solista</a></li>
+                <li><a href="../pag-sobre/sobre.html">Sobre o dia</a></li>
+                <li><a href="../pag-artistas/solistas.html">Solistas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="backtres" href="../../index.html">Página inicial</a>
+      <a class="backtres" href="../pag-sobreSolistas/index.html">O que é um solista</a>
+      <a class="backtres" href="../pag-sobre/sobre.html">Sobre o dia</a>
+      <a class="backtres" href="../pag-artistas/solistas.html">Solistas</a>
+      <a class="backtres" href="../pag-eventos/eventos.html">Eventos</a>
+    </div>
+    <body>
+      <main>
+        <h1>Eventos</h1>
+        <div class="eventos-container">
+          <div class="evento">
+            <img src="eventos 1.jpg" alt="Violinista Kaique Viana" />
+            <h3>Kaique Viana</h3>
+            <p>Local: Belo Horizonte</p>
+            <p>Data: 21/12/2023 às 10:00 Horas</p>
+            <p>Apresentação no teatro Belas Vias </p>
+            <button class="reserva-btn" onclick="mostrarPopup()">Reserva</button>
+          </div>
+      
+          <div class="evento">
+            <img src="evento 2.jpg" alt="Pianista milena Melo" />
+            <h3>Milena Melo</h3>
+            <p>Local: São Paulo</p>
+            <p>Data: 15/06/2023 às 14:00 Horas</p>
+            <p>Apresentação no teatro municiapal de são paulo</p>
+            <button class="reserva-btn" onclick="mostrarPopup()">Reserva</button>
+          </div>
+      
+          <div class="evento">
+            <img src="evento 3.jpg" alt="Tenista Bryan Rodrigues" />
+            <h3>Bryan Rodrigues</h3>
+            <p>Local: Rio de Janeiro</p>
+            <p>Data: 20/07/2023 às 15:00 Horas</p>
+            <p>Duelo contra o tenista Pedro Marques no Centro de Treino de Ténis</p>
+            <button class="reserva-btn" onclick="mostrarPopup()">Reserva</button>
+          </div>
+      
+          <div class="evento">
+            <img src="evento 4.jpg" alt="Lutador Miguel Novaes" />
+            <h3>Miguel Novaes</h3>
+            <p>Local: Brasília-df</p>
+            <p>Data: 20/09/2023 às 18:00 Horas</p>
+            <p>Duelo contra o lutador Matheus Silva no Centro de Lutas </p>
+            <button class="reserva-btn" onclick="mostrarPopup()">Reserva</button>
+          </div>
+        </div>
+      
+        <div id="overlay" class="overlay">
+          <div class="popup">
+            <span class="close-btn" onclick="fecharPopup()">X</span>
+            <h3>Reserva</h3>
+            <select id="evento-select">
+                <option value="evento1">Kaique Viana</option>
+                <option value="evento2">Milena Melo</option>
+                <option value="evento3">Bryan Rodrigues</option>
+                <option value="evento4">Miguel Novaes</option>
+              </select>
+            <input type="text" placeholder="Nome" />
+            <input type="email" placeholder="Email" />
+            <button onclick="fecharPopup()">Enviar</button>
+          </div>
+        </div>
+      </main>
+        <footer>
+          <br>&copy; 2023 - Todos os direitos reservados.
+       </footer>
+    </body>
+</html>
